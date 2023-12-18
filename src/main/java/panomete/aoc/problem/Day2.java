@@ -1,10 +1,10 @@
 package panomete.aoc.problem;
 
-import panomete.aoc.solution.Solution;
+import panomete.aoc.template.AoCTemplate;
 
 import java.util.List;
 
-public class Day2 implements Solution<Integer, List<String>> {
+public class Day2 implements AoCTemplate<Integer, List<String>> {
 
     @Override
     public Integer part1Solution(List<String> input) {

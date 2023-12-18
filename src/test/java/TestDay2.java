@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import panomete.aoc.problem.Day2;
-import panomete.aoc.solution.Solution;
+import panomete.aoc.template.AoCTemplate;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ public class TestDay2 {
 
     @Test
     public void testPart1() {
-        Solution<Integer, List<String>> solution = new Day2();
+        AoCTemplate<Integer, List<String>> solution = new Day2();
         List<String> testcase1 = List.of("2x3x4");
         List<String> testcase2 = List.of("1x1x10");
 
@@ -20,7 +20,7 @@ public class TestDay2 {
 
     @Test
     public void testPart2() {
-        Solution<Integer, List<String>> solution = new Day2();
+        AoCTemplate<Integer, List<String>> solution = new Day2();
         List<String> testcase1 = List.of("2x3x4");
         List<String> testcase2 = List.of("1x1x10");
 
