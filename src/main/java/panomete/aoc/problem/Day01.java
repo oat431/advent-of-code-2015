@@ -2,7 +2,7 @@ package panomete.aoc.problem;
 
 import panomete.aoc.template.AoCTemplate;
 
-public class Day1 implements AoCTemplate<Integer, String> {
+public class Day01 implements AoCTemplate<Integer, String> {
 
     @Override
     public Integer part1Solution(String input) {

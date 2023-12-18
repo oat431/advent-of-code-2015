@@ -1,16 +1,16 @@
 import org.junit.jupiter.api.Test;
-import panomete.aoc.problem.Day2;
+import panomete.aoc.problem.Day02;
 import panomete.aoc.template.AoCTemplate;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestDay2 {
+public class TestDay02 {
 
     @Test
     public void testPart1() {
-        AoCTemplate<Integer, List<String>> solution = new Day2();
+        AoCTemplate<Integer, List<String>> solution = new Day02();
         List<String> testcase1 = List.of("2x3x4");
         List<String> testcase2 = List.of("1x1x10");
 
@@ -20,7 +20,7 @@ public class TestDay2 {
 
     @Test
     public void testPart2() {
-        AoCTemplate<Integer, List<String>> solution = new Day2();
+        AoCTemplate<Integer, List<String>> solution = new Day02();
         List<String> testcase1 = List.of("2x3x4");
         List<String> testcase2 = List.of("1x1x10");
 
