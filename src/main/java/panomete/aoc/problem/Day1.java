@@ -2,17 +2,11 @@ package panomete.aoc.problem;
 
 import panomete.aoc.solution.Solution;
 
-import java.util.List;
-
 public class Day1 implements Solution<Integer, String> {
 
     @Override
     public Integer part1Solution(String input) {
-        int floor = 0;
-        for (char c : input.toCharArray()) {
-            floor += c == '(' ? 1 : -1;
-        }
-        return floor;
+        return input.chars().map(c -> c == '(' ? 1 : -1).sum();
     }
 
     @Override
