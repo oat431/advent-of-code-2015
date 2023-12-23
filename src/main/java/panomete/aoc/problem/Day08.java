@@ -6,18 +6,20 @@ import panomete.aoc.template.AoCTemplate;
 import java.util.List;
 
 public class Day08 implements AoCTemplate<Integer, List<String>> {
+    private final int allLength;
+
+    public Day08(List<String> input) {
+        this.allLength = input.stream().mapToInt(String::length).sum();
+    }
+
     @Override
     public Integer part1Solution(List<String> input) {
-        int allLength = input.stream().mapToInt(String::length).sum();
-        int stringLength = input.stream().map(this::extractString).toList().stream().mapToInt(String::length).sum();
-        return allLength - stringLength;
+        return this.allLength - input.stream().map(this::extractString).toList().stream().mapToInt(String::length).sum();
     }
 
     @Override
     public Integer part2Solution(List<String> input) {
-        int allLength = input.stream().mapToInt(String::length).sum();
-        int enhancedLength = input.stream().map(this::enhanceString).toList().stream().mapToInt(String::length).sum();
-        return enhancedLength - allLength;
+        return input.stream().map(this::enhanceString).toList().stream().mapToInt(String::length).sum() - this.allLength;
     }
 
     public String extractString(String s) {

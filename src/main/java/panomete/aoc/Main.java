@@ -9,8 +9,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        AoCTemplate<Integer, List<String>> solution = new Day08();
         List<String> input = Utils.readInput("input_day_8");
+        AoCTemplate<Integer, List<String>> solution = new Day08(input);
         System.out.println(solution.part1Solution(input));
         System.out.println(solution.part2Solution(input));
     }

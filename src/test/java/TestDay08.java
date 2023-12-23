@@ -12,14 +12,14 @@ public class TestDay08 {
     @Test
     public void testPart1() throws FileNotFoundException {
         List<String> testcase = Utils.readInput("input_day_8_example");
-        Day08 solution = new Day08();
+        Day08 solution = new Day08(testcase);
         assertEquals(12, solution.part1Solution(testcase));
     }
 
     @Test
     public void testPart2() throws FileNotFoundException {
         List<String> testcase = Utils.readInput("input_day_8_example");
-        Day08 solution = new Day08();
+        Day08 solution = new Day08(testcase);
         assertEquals(19, solution.part2Solution(testcase));
     }
 
